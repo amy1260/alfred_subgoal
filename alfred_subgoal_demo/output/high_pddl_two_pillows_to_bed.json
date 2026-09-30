@@ -1,0 +1,120 @@
+[
+  {
+    "high_idx": 0,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|-5|10|0|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "sofa"
+      ]
+    },
+    "template_desc": "go to the sofa"
+  },
+  {
+    "high_idx": 1,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "Pillow|-01.60|+00.45|+02.90",
+      "receptacleObjectId": "Sofa|-01.50|+00.40|+03.00"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "pillow"
+      ]
+    },
+    "template_desc": "pick up the pillow"
+  },
+  {
+    "high_idx": 2,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|0|6|0|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "bed"
+      ]
+    },
+    "template_desc": "go to the bed"
+  },
+  {
+    "high_idx": 3,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "Pillow|-01.60|+00.45|+02.90",
+      "receptacleObjectId": "Bed|+00.00|+00.50|+02.00"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "pillow",
+        "bed"
+      ]
+    },
+    "template_desc": "put the pillow in the bed"
+  },
+  {
+    "high_idx": 4,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|-6|0|3|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "desk"
+      ]
+    },
+    "template_desc": "go to the desk"
+  },
+  {
+    "high_idx": 5,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "Pillow|-02.00|+00.78|-00.10",
+      "receptacleObjectId": "Desk|-02.00|+00.75|+00.00"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "pillow"
+      ]
+    },
+    "template_desc": "pick up the pillow"
+  },
+  {
+    "high_idx": 6,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|0|6|0|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "bed"
+      ]
+    },
+    "template_desc": "go to the bed"
+  },
+  {
+    "high_idx": 7,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "Pillow|-02.00|+00.78|-00.10",
+      "receptacleObjectId": "Bed|+00.00|+00.50|+02.00"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "pillow",
+        "bed"
+      ]
+    },
+    "template_desc": "put the pillow in the bed"
+  }
+]

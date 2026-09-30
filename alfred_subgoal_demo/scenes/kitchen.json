@@ -1,0 +1,33 @@
+{
+  "description": "Toy kitchen in ALFRED format. loc|x|z|rotation|horizon are grid positions (0.25 m per unit) where the agent stands to reach each receptacle.",
+  "agent_start": "loc|0|0|0|30",
+  "receptacles": [
+    {"id": "CounterTop|+01.00|+00.95|-01.00", "type": "CounterTop", "loc": "loc|4|-3|1|45"},
+    {"id": "DiningTable|-02.00|+00.75|+01.50", "type": "DiningTable", "loc": "loc|-6|5|3|45"},
+    {"id": "Microwave|+01.50|+01.20|-02.00", "type": "Microwave", "loc": "loc|6|-7|2|0"},
+    {"id": "Fridge|-01.50|+00.00|-02.50", "type": "Fridge", "loc": "loc|-5|-8|2|30"},
+    {"id": "SinkBasin|+02.50|+00.90|+00.50", "type": "SinkBasin", "loc": "loc|9|2|1|60"},
+    {"id": "Cabinet|+02.00|+01.80|-01.50", "type": "Cabinet", "loc": "loc|7|-5|1|0"},
+    {"id": "Shelf|-03.00|+01.20|-00.50", "type": "Shelf", "loc": "loc|-10|-2|3|30"}
+  ],
+  "objects": [
+    {"id": "Apple|-02.10|+00.80|+01.40", "type": "Apple", "in": "DiningTable|-02.00|+00.75|+01.50"},
+    {"id": "Tomato|+01.10|+01.00|-01.10", "type": "Tomato", "in": "CounterTop|+01.00|+00.95|-01.00"},
+    {"id": "Mug|+02.40|+00.95|+00.40", "type": "Mug", "in": "SinkBasin|+02.50|+00.90|+00.50"},
+    {"id": "Pencil|-01.90|+00.80|+01.60", "type": "Pencil", "in": "DiningTable|-02.00|+00.75|+01.50"},
+    {"id": "Knife|+00.90|+00.97|-00.90", "type": "Knife", "in": "CounterTop|+01.00|+00.95|-01.00"},
+    {"id": "Egg|-01.40|+00.60|-02.40", "type": "Egg", "in": "Fridge|-01.50|+00.00|-02.50"},
+    {"id": "Egg|-01.60|+00.60|-02.40", "type": "Egg", "in": "Fridge|-01.50|+00.00|-02.50"},
+    {"id": "FloorLamp|-03.20|+00.00|+02.00", "type": "FloorLamp", "loc": "loc|-11|7|0|0"}
+  ],
+  "demo_tasks": [
+    {"name": "simple",   "task": "pick_and_place_simple",            "obj": "Tomato", "recep": "DiningTable"},
+    {"name": "heat",     "task": "pick_heat_then_place_in_recep",    "obj": "Apple",  "recep": "CounterTop"},
+    {"name": "cool",     "task": "pick_cool_then_place_in_recep",    "obj": "Tomato", "recep": "Cabinet"},
+    {"name": "clean",    "task": "pick_clean_then_place_in_recep",   "obj": "Mug",    "recep": "Shelf"},
+    {"name": "two_obj",  "task": "pick_two_obj_and_place",           "obj": "Egg",    "recep": "CounterTop"},
+    {"name": "mrecep",   "task": "pick_and_place_with_movable_recep","obj": "Pencil", "mrecep": "Mug", "recep": "Shelf"},
+    {"name": "look",     "task": "look_at_obj_in_light",             "obj": "Pencil", "toggle": "FloorLamp"},
+    {"name": "slice_heat","task": "pick_heat_then_place_in_recep",   "obj": "Tomato", "recep": "DiningTable", "sliced": true}
+  ]
+}

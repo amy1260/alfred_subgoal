@@ -1,0 +1,134 @@
+[
+  {
+    "high_idx": 0,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|4|-3|1|45"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "countertop"
+      ]
+    },
+    "template_desc": "go to the countertop"
+  },
+  {
+    "high_idx": 1,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "Knife|+00.90|+00.97|-00.90",
+      "receptacleObjectId": "CounterTop|+01.00|+00.95|-01.00"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "knife"
+      ]
+    },
+    "template_desc": "pick up the knife"
+  },
+  {
+    "high_idx": 2,
+    "planner_action": {
+      "action": "SliceObject",
+      "objectId": "Tomato|+01.10|+01.00|-01.10"
+    },
+    "discrete_action": {
+      "action": "SliceObject",
+      "args": [
+        "tomato"
+      ]
+    },
+    "template_desc": "slice the tomato"
+  },
+  {
+    "high_idx": 3,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "Knife|+00.90|+00.97|-00.90",
+      "receptacleObjectId": "CounterTop|+01.00|+00.95|-01.00"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "knife",
+        "countertop"
+      ]
+    },
+    "template_desc": "put the knife in the countertop"
+  },
+  {
+    "high_idx": 4,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "Tomato|+01.10|+01.00|-01.10",
+      "receptacleObjectId": "CounterTop|+01.00|+00.95|-01.00"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "tomato"
+      ]
+    },
+    "template_desc": "pick up the tomato"
+  },
+  {
+    "high_idx": 5,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|6|-7|2|0"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "microwave"
+      ]
+    },
+    "template_desc": "go to the microwave"
+  },
+  {
+    "high_idx": 6,
+    "planner_action": {
+      "action": "HeatObject",
+      "receptacleObjectId": "Microwave|+01.50|+01.20|-02.00"
+    },
+    "discrete_action": {
+      "action": "HeatObject",
+      "args": [
+        "tomato"
+      ]
+    },
+    "template_desc": "heat the tomato"
+  },
+  {
+    "high_idx": 7,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|-6|5|3|45"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "diningtable"
+      ]
+    },
+    "template_desc": "go to the diningtable"
+  },
+  {
+    "high_idx": 8,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "Tomato|+01.10|+01.00|-01.10",
+      "receptacleObjectId": "DiningTable|-02.00|+00.75|+01.50"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "tomato",
+        "diningtable"
+      ]
+    },
+    "template_desc": "put the tomato in the diningtable"
+  }
+]

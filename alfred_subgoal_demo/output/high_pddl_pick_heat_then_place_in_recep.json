@@ -1,0 +1,89 @@
+[
+  {
+    "high_idx": 0,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|-6|5|3|45"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "diningtable"
+      ]
+    },
+    "template_desc": "go to the diningtable"
+  },
+  {
+    "high_idx": 1,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "Apple|-02.10|+00.80|+01.40",
+      "receptacleObjectId": "DiningTable|-02.00|+00.75|+01.50"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "apple"
+      ]
+    },
+    "template_desc": "pick up the apple"
+  },
+  {
+    "high_idx": 2,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|6|-7|2|0"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "microwave"
+      ]
+    },
+    "template_desc": "go to the microwave"
+  },
+  {
+    "high_idx": 3,
+    "planner_action": {
+      "action": "HeatObject",
+      "receptacleObjectId": "Microwave|+01.50|+01.20|-02.00"
+    },
+    "discrete_action": {
+      "action": "HeatObject",
+      "args": [
+        "apple"
+      ]
+    },
+    "template_desc": "heat the apple"
+  },
+  {
+    "high_idx": 4,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|4|-3|1|45"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "countertop"
+      ]
+    },
+    "template_desc": "go to the countertop"
+  },
+  {
+    "high_idx": 5,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "Apple|-02.10|+00.80|+01.40",
+      "receptacleObjectId": "CounterTop|+01.00|+00.95|-01.00"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "apple",
+        "countertop"
+      ]
+    },
+    "template_desc": "put the apple in the countertop"
+  }
+]

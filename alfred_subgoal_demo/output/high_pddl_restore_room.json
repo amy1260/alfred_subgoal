@@ -1,0 +1,373 @@
+[
+  {
+    "high_idx": 0,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|-5|10|0|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "sofa"
+      ]
+    },
+    "template_desc": "go to the sofa"
+  },
+  {
+    "high_idx": 1,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "CellPhone|-01.40|+00.45|+03.10",
+      "receptacleObjectId": "Sofa|-01.50|+00.40|+03.00"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "cellphone"
+      ]
+    },
+    "template_desc": "pick up the cellphone"
+  },
+  {
+    "high_idx": 2,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|5|8|1|45"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "sidetable"
+      ]
+    },
+    "template_desc": "go to the sidetable"
+  },
+  {
+    "high_idx": 3,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "CellPhone|-01.40|+00.45|+03.10",
+      "receptacleObjectId": "SideTable|+01.50|+00.60|+02.50"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "cellphone",
+        "sidetable"
+      ]
+    },
+    "template_desc": "put the cellphone in the sidetable"
+  },
+  {
+    "high_idx": 4,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "Newspaper|+01.40|+00.65|+02.40",
+      "receptacleObjectId": "SideTable|+01.50|+00.60|+02.50"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "newspaper"
+      ]
+    },
+    "template_desc": "pick up the newspaper"
+  },
+  {
+    "high_idx": 5,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|7|-3|1|60"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "garbagecan"
+      ]
+    },
+    "template_desc": "go to the garbagecan"
+  },
+  {
+    "high_idx": 6,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "Newspaper|+01.40|+00.65|+02.40",
+      "receptacleObjectId": "GarbageCan|+02.00|+00.00|-01.00"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "newspaper",
+        "garbagecan"
+      ]
+    },
+    "template_desc": "put the newspaper in the garbagecan"
+  },
+  {
+    "high_idx": 7,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|-5|10|0|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "sofa"
+      ]
+    },
+    "template_desc": "go to the sofa"
+  },
+  {
+    "high_idx": 8,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "Pillow|-01.60|+00.45|+02.90",
+      "receptacleObjectId": "Sofa|-01.50|+00.40|+03.00"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "pillow"
+      ]
+    },
+    "template_desc": "pick up the pillow"
+  },
+  {
+    "high_idx": 9,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|0|6|0|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "bed"
+      ]
+    },
+    "template_desc": "go to the bed"
+  },
+  {
+    "high_idx": 10,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "Pillow|-01.60|+00.45|+02.90",
+      "receptacleObjectId": "Bed|+00.00|+00.50|+02.00"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "pillow",
+        "bed"
+      ]
+    },
+    "template_desc": "put the pillow in the bed"
+  },
+  {
+    "high_idx": 11,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "RemoteControl|+00.20|+00.55|+02.10",
+      "receptacleObjectId": "Bed|+00.00|+00.50|+02.00"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "remotecontrol"
+      ]
+    },
+    "template_desc": "pick up the remotecontrol"
+  },
+  {
+    "high_idx": 12,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|5|8|1|45"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "sidetable"
+      ]
+    },
+    "template_desc": "go to the sidetable"
+  },
+  {
+    "high_idx": 13,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "RemoteControl|+00.20|+00.55|+02.10",
+      "receptacleObjectId": "SideTable|+01.50|+00.60|+02.50"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "remotecontrol",
+        "sidetable"
+      ]
+    },
+    "template_desc": "put the remotecontrol in the sidetable"
+  },
+  {
+    "high_idx": 14,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|12|-11|2|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "bathtubbasin"
+      ]
+    },
+    "template_desc": "go to the bathtubbasin"
+  },
+  {
+    "high_idx": 15,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "Towel|+03.40|+00.45|-03.40",
+      "receptacleObjectId": "BathtubBasin|+03.50|+00.40|-03.50"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "towel"
+      ]
+    },
+    "template_desc": "pick up the towel"
+  },
+  {
+    "high_idx": 16,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|11|-8|1|0"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "towelholder"
+      ]
+    },
+    "template_desc": "go to the towelholder"
+  },
+  {
+    "high_idx": 17,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "Towel|+03.40|+00.45|-03.40",
+      "receptacleObjectId": "TowelHolder|+03.00|+01.20|-02.50"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "towel",
+        "towelholder"
+      ]
+    },
+    "template_desc": "put the towel in the towelholder"
+  },
+  {
+    "high_idx": 18,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|0|6|0|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "bed"
+      ]
+    },
+    "template_desc": "go to the bed"
+  },
+  {
+    "high_idx": 19,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "Book|+00.30|+00.55|+01.80",
+      "receptacleObjectId": "Bed|+00.00|+00.50|+02.00"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "book"
+      ]
+    },
+    "template_desc": "pick up the book"
+  },
+  {
+    "high_idx": 20,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|-6|0|3|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "desk"
+      ]
+    },
+    "template_desc": "go to the desk"
+  },
+  {
+    "high_idx": 21,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "Book|+00.30|+00.55|+01.80",
+      "receptacleObjectId": "Desk|-02.00|+00.75|+00.00"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "book",
+        "desk"
+      ]
+    },
+    "template_desc": "put the book in the desk"
+  },
+  {
+    "high_idx": 22,
+    "planner_action": {
+      "action": "PickupObject",
+      "objectId": "Pillow|-02.00|+00.78|-00.10",
+      "receptacleObjectId": "Desk|-02.00|+00.75|+00.00"
+    },
+    "discrete_action": {
+      "action": "PickupObject",
+      "args": [
+        "pillow"
+      ]
+    },
+    "template_desc": "pick up the pillow"
+  },
+  {
+    "high_idx": 23,
+    "planner_action": {
+      "action": "GotoLocation",
+      "location": "loc|0|6|0|30"
+    },
+    "discrete_action": {
+      "action": "GotoLocation",
+      "args": [
+        "bed"
+      ]
+    },
+    "template_desc": "go to the bed"
+  },
+  {
+    "high_idx": 24,
+    "planner_action": {
+      "action": "PutObject",
+      "objectId": "Pillow|-02.00|+00.78|-00.10",
+      "receptacleObjectId": "Bed|+00.00|+00.50|+02.00"
+    },
+    "discrete_action": {
+      "action": "PutObject",
+      "args": [
+        "pillow",
+        "bed"
+      ]
+    },
+    "template_desc": "put the pillow in the bed"
+  }
+]

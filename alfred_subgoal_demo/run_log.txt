@@ -1,0 +1,114 @@
+
+=== simple: pick_and_place_simple  obj=Tomato recep=DiningTable mrecep=None toggle=None sliced=False
+   0  GotoLocation   countertop                       | go to the countertop
+   1  PickupObject   tomato                           | pick up the tomato
+   2  GotoLocation   diningtable                      | go to the diningtable
+   3  PutObject      tomato, diningtable              | put the tomato in the diningtable
+
+=== heat: pick_heat_then_place_in_recep  obj=Apple recep=CounterTop mrecep=None toggle=None sliced=False
+   0  GotoLocation   diningtable                      | go to the diningtable
+   1  PickupObject   apple                            | pick up the apple
+   2  GotoLocation   microwave                        | go to the microwave
+   3  HeatObject     apple                            | heat the apple
+   4  GotoLocation   countertop                       | go to the countertop
+   5  PutObject      apple, countertop                | put the apple in the countertop
+
+=== cool: pick_cool_then_place_in_recep  obj=Tomato recep=Cabinet mrecep=None toggle=None sliced=False
+   0  GotoLocation   countertop                       | go to the countertop
+   1  PickupObject   tomato                           | pick up the tomato
+   2  GotoLocation   fridge                           | go to the fridge
+   3  CoolObject     tomato                           | cool the tomato
+   4  GotoLocation   cabinet                          | go to the cabinet
+   5  PutObject      tomato, cabinet                  | put the tomato in the cabinet
+
+=== clean: pick_clean_then_place_in_recep  obj=Mug recep=Shelf mrecep=None toggle=None sliced=False
+   0  GotoLocation   sinkbasin                        | go to the sinkbasin
+   1  PickupObject   mug                              | pick up the mug
+   2  CleanObject    mug                              | wash the mug
+   3  GotoLocation   shelf                            | go to the shelf
+   4  PutObject      mug, shelf                       | put the mug in the shelf
+
+=== two_obj: pick_two_obj_and_place  obj=Egg recep=CounterTop mrecep=None toggle=None sliced=False
+   0  GotoLocation   fridge                           | go to the fridge
+   1  PickupObject   egg                              | pick up the egg
+   2  GotoLocation   countertop                       | go to the countertop
+   3  PutObject      egg, countertop                  | put the egg in the countertop
+   4  GotoLocation   fridge                           | go to the fridge
+   5  PickupObject   egg                              | pick up the egg
+   6  GotoLocation   countertop                       | go to the countertop
+   7  PutObject      egg, countertop                  | put the egg in the countertop
+
+=== mrecep: pick_and_place_with_movable_recep  obj=Pencil recep=Shelf mrecep=Mug toggle=None sliced=False
+   0  GotoLocation   diningtable                      | go to the diningtable
+   1  PickupObject   pencil                           | pick up the pencil
+   2  GotoLocation   mug                              | go to the mug
+   3  PutObject      pencil, mug                      | put the pencil in the mug
+   4  PickupObject   mug                              | pick up the mug
+   5  GotoLocation   shelf                            | go to the shelf
+   6  PutObject      mug, shelf                       | put the mug in the shelf
+
+=== look: look_at_obj_in_light  obj=Pencil recep=None mrecep=None toggle=FloorLamp sliced=False
+   0  GotoLocation   diningtable                      | go to the diningtable
+   1  PickupObject   pencil                           | pick up the pencil
+   2  GotoLocation   floorlamp                        | go to the floorlamp
+   3  ToggleObject   floorlamp                        | toggle floorlamp
+
+=== slice_heat: pick_heat_then_place_in_recep  obj=Tomato recep=DiningTable mrecep=None toggle=None sliced=True
+   0  GotoLocation   countertop                       | go to the countertop
+   1  PickupObject   knife                            | pick up the knife
+   2  SliceObject    tomato                           | slice the tomato
+   3  PutObject      knife, countertop                | put the knife in the countertop
+   4  PickupObject   tomato                           | pick up the tomato
+   5  GotoLocation   microwave                        | go to the microwave
+   6  HeatObject     tomato                           | heat the tomato
+   7  GotoLocation   diningtable                      | go to the diningtable
+   8  PutObject      tomato, diningtable              | put the tomato in the diningtable
+
+=== remote_to_sidetable: pick_and_place_simple  obj=RemoteControl recep=SideTable mrecep=None toggle=None sliced=False
+   0  GotoLocation   bed                              | go to the bed
+   1  PickupObject   remotecontrol                    | pick up the remotecontrol
+   2  GotoLocation   sidetable                        | go to the sidetable
+   3  PutObject      remotecontrol, sidetable         | put the remotecontrol in the sidetable
+
+=== two_pillows_to_bed: pick_two_obj_and_place  obj=Pillow recep=Bed mrecep=None toggle=None sliced=False
+   0  GotoLocation   sofa                             | go to the sofa
+   1  PickupObject   pillow                           | pick up the pillow
+   2  GotoLocation   bed                              | go to the bed
+   3  PutObject      pillow, bed                      | put the pillow in the bed
+   4  GotoLocation   desk                             | go to the desk
+   5  PickupObject   pillow                           | pick up the pillow
+   6  GotoLocation   bed                              | go to the bed
+   7  PutObject      pillow, bed                      | put the pillow in the bed
+
+=== book_into_drawer: pick_and_place_simple  obj=Book recep=Drawer mrecep=None toggle=None sliced=False
+   0  GotoLocation   bed                              | go to the bed
+   1  PickupObject   book                             | pick up the book
+   2  GotoLocation   drawer                           | go to the drawer
+   3  PutObject      book, drawer                     | put the book in the drawer
+
+=== restore_room: restore  obj=None recep=None mrecep=None toggle=None sliced=False
+   0  GotoLocation   sofa                             | go to the sofa
+   1  PickupObject   cellphone                        | pick up the cellphone
+   2  GotoLocation   sidetable                        | go to the sidetable
+   3  PutObject      cellphone, sidetable             | put the cellphone in the sidetable
+   4  PickupObject   newspaper                        | pick up the newspaper
+   5  GotoLocation   garbagecan                       | go to the garbagecan
+   6  PutObject      newspaper, garbagecan            | put the newspaper in the garbagecan
+   7  GotoLocation   sofa                             | go to the sofa
+   8  PickupObject   pillow                           | pick up the pillow
+   9  GotoLocation   bed                              | go to the bed
+  10  PutObject      pillow, bed                      | put the pillow in the bed
+  11  PickupObject   remotecontrol                    | pick up the remotecontrol
+  12  GotoLocation   sidetable                        | go to the sidetable
+  13  PutObject      remotecontrol, sidetable         | put the remotecontrol in the sidetable
+  14  GotoLocation   bathtubbasin                     | go to the bathtubbasin
+  15  PickupObject   towel                            | pick up the towel
+  16  GotoLocation   towelholder                      | go to the towelholder
+  17  PutObject      towel, towelholder               | put the towel in the towelholder
+  18  GotoLocation   bed                              | go to the bed
+  19  PickupObject   book                             | pick up the book
+  20  GotoLocation   desk                             | go to the desk
+  21  PutObject      book, desk                       | put the book in the desk
+  22  PickupObject   pillow                           | pick up the pillow
+  23  GotoLocation   bed                              | go to the bed
+  24  PutObject      pillow, bed                      | put the pillow in the bed
